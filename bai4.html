@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+<h1>Tìm số lớn nhất</h1>
+<input type="number" id="firstNumber">
+<input type="number" id="secondNumber">
+<input type="number" id="thirdNumber">
+<button onclick="check()">Tìm max</button>
+<p id="result">Số lớn nhất là.</p>
+<script>
+    function check() {
+        let b = +document.getElementById('secondNumber').value;
+        let c = +document.getElementById('thirdNumber').value;
+        let max = Math.max(a,b,c);
+        document.getElementById('result').innerHTML = max + ' là số lớn nhất'}
+</script>
+</body>
+</html>

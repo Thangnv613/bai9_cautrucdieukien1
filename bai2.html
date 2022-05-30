@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.-->
+
+<h1>Kiểm tra xem đủ tuổi vào lớp 10 chưa?</h1>
+<input type="number" id="tuoi" >
+<button onclick="check()">Check</button>
+<p>Kết quả là: </p>
+<p id="result"></p>
+<script>
+    function check() {
+        let tuoi = parseInt(document.getElementById('tuoi').value);
+        if (tuoi > 15)
+            document.getElementById('result').innerHTML = tuoi + ' tuổi đủ điều kiên vào lớp 10';
+        else
+            document.getElementById('result').innerHTML = tuoi + ' tuổi không đủ điều kiện vào lớp 10';
+    }
+</script>
+</body>
+</html>
